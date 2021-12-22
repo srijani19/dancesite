@@ -1,0 +1,179 @@
+<!--<!doctype html>
+
+<!--<h2>Select a video to upload and play</h2>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+{% if filename %}
+	<div style="margin: 10px auto;">
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+	</div>
+{% endif %}-->
+<!--<div style="margin: 10px auto;">
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="\static\uploads\WhatsApp Video 2021-10-19 at 9.51.08 PM.mp4" type="video/mp4"></source>
+		</video>
+        <video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="\static\uploads\WhatsApp Video 2021-10-18 at 1.29.05 PM.mp4" type="video/mp4"></source>
+		</video>
+	</div>
+<!--<form method="post" action="/portfolio" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Upload">
+	</p>
+</form>-->
+<!--/html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h2>My Dances !! ENJOY FOLKS !</h2>
+
+<div class="card" mb-3>
+  <div class="row">
+    <div class="col-md-4">
+    <video controls="controls" preload="preload" style="height:220px;width:150px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-22 at 9.52.33 PM.mp4" type="video/mp4" autostart="false"></source>
+		</video> 
+    </div>
+    <div class="col-md-8">
+    <div class = "card-body">
+       <h5 class="card-title">MAAR DAALA</h5>
+       <p class="card-text">This ia an exclusive dance choreoggraphed by DEVESH MIRCHANDANI and is from the movie "DEVDAS"... The orinal song was performed by none other than Madhuri Dixit.I performed this dance with my best friend for a competition.  HAPPY DANCING!</p>
+    </div>
+  </div>
+  </div>
+  <hr >
+  <div class="row">
+  <div class="col-md-4">
+    <video  controls="controls" preload="preload" style="height:200px;width:150px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-22 at 9.51.20 PM.mp4" type="video/mp4" autostart="false"></source>
+		</video>
+    </div>
+    <div class="col-md-8">
+    <div class = "card-body">
+       <h5 class="card-title">APSARA AALI</h5>
+       <p class="card-text"> HAPPY DANCING!</p>
+    </div>
+  </div>
+  </div>
+  <hr >
+  <div class="row">
+   <div class="col-md-4">
+    <video  controls="controls" preload="preload" style="height:200px;width:150px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-22 at 9.53.46 PM.mp4" type="video/mp4" autostart="false"></source>
+		</video>
+    
+    </div>
+    <div class="col-md-8">
+    <div class = "card-body">
+       <h5 class="card-title">AANONDO DHARA</h5>
+       <p class="card-text">This ia a bengali dance commonly known as "RABINDRANRITYA" which is performed on all songs composed by the famous poet Rabindranath Thakur. HAPPY DANCING!</p>
+    </div>
+  </div>
+    </div>
+    <hr>
+    <div class="row">
+   <div class="col-md-4">
+    <video  controls="controls" preload="preload" style="height:200px;width:150px">
+			<source src="\static\uploads\shawangagane.mp4" type="video/mp4" autostart="false"></source>
+		</video>
+    
+    </div>
+    <div class="col-md-8">
+    <div class = "card-body">
+       <h5 class="card-title">SHAWAN GAGANE</h5>
+       <p class="card-text">This ia a bengali dance commonly known as "RABINDRANRITYA" which is performed on all songs composed by the famous poet Rabindranath Thakur. HAPPY DANCING!</p>
+    </div>
+  </div>
+    </div>
+    
+  
+  
+</div>
+</div>
+
+<div class="container"style="margin-top:25px; background-color:black">
+ <a class="btn btn-primary btn-sm"  style="margin:auto;margin-top:10px;display: flex;display: grid;width:90px" href="/home" >HOME</a>
+ <a class="btn btn-primary btn-sm" style="margin:auto;margin-top:10px;margin-bottom:10px;display: flex;display: grid;width:90px" href="/" >INDEX</a>
+</div>
+
+</body>
+</html>
+<!--<div class="column">
+    <video autoplay="autoplay" controls="controls" preload="preload" style="height:250px;width:210px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-18 at 1.29.05 PM.mp4" type="video/mp4"></source>
+		</video>
+  </div>
+  <div class="column">
+    <video autoplay="autoplay" controls="controls" preload="preload" style="height:250px;width:210px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-18 at 1.29.05 PM.mp4" type="video/mp4"></source>
+		</video>
+  </div>
+  <div class="column">
+    <video autoplay="autoplay" controls="controls" preload="preload" style="height:250px;width:210px">
+			<source src="\static\uploads\WhatsApp Video 2021-10-18 at 1.29.05 PM.mp4" type="video/mp4"></source>
+		</video>
+  </div>-->
+ <!-- <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>-->
